@@ -2,8 +2,8 @@ package bootstrap
 
 import (
 	"<%= moduleName %>/app/middleware"
-	"<%= moduleName %>Name %>/global"
-	"<%= moduleName %>Name %>/routes"
+	"<%= moduleName %>/global"
+	"<%= moduleName %>/routes"
 	"context"
 	"log"
 	"net/http"

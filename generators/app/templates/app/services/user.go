@@ -2,9 +2,9 @@ package services
 
 import (
 	"<%= moduleName %>/app/common/request"
-	"<%= moduleName %>Name %>/app/models"
-	"<%= moduleName %>Name %>/global"
-	"<%= moduleName %>Name %>/utils"
+	"<%= moduleName %>/app/models"
+	"<%= moduleName %>/global"
+	"<%= moduleName %>/utils"
 	"errors"
 	"strconv"
 )

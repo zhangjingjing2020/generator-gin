@@ -2,8 +2,8 @@ package app
 
 import (
 	"<%= moduleName %>/app/common/request"
-	"<%= moduleName %>Name %>/app/common/response"
-	"<%= moduleName %>Name %>/app/services"
+	"<%= moduleName %>/app/common/response"
+	"<%= moduleName %>/app/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"

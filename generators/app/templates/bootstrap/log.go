@@ -2,7 +2,7 @@ package bootstrap
 
 import (
 	"<%= moduleName %>/global"
-	"<%= moduleName %>Name %>/utils"
+	"<%= moduleName %>/utils"
 	"os"
 	"time"
 

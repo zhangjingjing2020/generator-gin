@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"<%= moduleName %>/app/common/response"
-	"<%= moduleName %>Name %>/global"
+	"<%= moduleName %>/global"
 
 	"github.com/gin-gonic/gin"
 	"gopkg.in/natefinch/lumberjack.v2"

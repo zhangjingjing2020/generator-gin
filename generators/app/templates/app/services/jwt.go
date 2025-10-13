@@ -2,7 +2,7 @@ package services
 
 import (
 	"<%= moduleName %>/global"
-	"<%= moduleName %>Name %>/utils"
+	"<%= moduleName %>/utils"
 	"context"
 	"errors"
 	"strconv"

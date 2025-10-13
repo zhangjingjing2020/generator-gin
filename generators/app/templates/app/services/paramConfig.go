@@ -2,7 +2,7 @@ package services
 
 import (
 	"<%= moduleName %>/app/models"
-	"<%= moduleName %>Name %>/global"
+	"<%= moduleName %>/global"
 	"errors"
 )
 

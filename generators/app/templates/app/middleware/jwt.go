@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"<%= moduleName %>/app/common/response"
-	"<%= moduleName %>Name %>/app/services"
-	"<%= moduleName %>Name %>/global"
+	"<%= moduleName %>/app/services"
+	"<%= moduleName %>/global"
 	"strconv"
 	"time"
 
