@@ -1,0 +1,11 @@
+package bootstrap
+
+import (
+	"sd-service/global"
+
+	"github.com/jassue/go-storage/local"
+)
+
+func InitializeStorage() {
+	_, _ = local.Init(global.App.Config.Storage.Disks.Local)
+}

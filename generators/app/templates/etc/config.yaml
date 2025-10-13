@@ -1,0 +1,62 @@
+app:
+  env: 'local'
+  port: 3600
+  app_name: '<%= moduleName %>'
+  app_url: 'http://localhost'
+
+log:
+  level: 'info'
+  root_dir: './storage/logs'
+  filename: 'app.log'
+  format: ''
+  show_line: true
+  max_backups: 3
+  max_size: 500
+  max_age: 28
+  compress: true
+
+database:
+  driver: 'mysql'
+  host: '192.168.1.xx'
+  port: 3306
+  database: 'dev_xx'
+  username: 'user_xx'
+  password: 'xxxx'
+  charset: 'utf8mb4'
+  max_idle_conns: 10
+  max_open_conns: 100
+  log_mode: 'info'
+  enable_file_log_writer: true
+  log_filename: 'sql.log'
+
+msaccess:
+  driver: 'access'
+  host:  'D:\\db_access\\' 
+  port: ''
+  database: 'xxxx.mdb' 
+  username: ''
+  password: ''
+  max_idle_conns: 10
+  max_open_conns: 100
+  log_mode: 'info'
+  enable_file_log_writer: true
+  log_filename: 'msaccess.log'
+    
+jwt:
+  secret: '9CoWUmeki0XQ3AMLs4RMBXmh8WcujHuf20uWcHxwAkGrZ0ht'
+  jwt_ttl: 43200
+  jwt_blacklist_grace_period: 10
+  refresh_grace_period: 1800
+
+redis:
+  host: '192.168.1.xxx'
+  port: 6379
+  db: 4
+  password: 'xxxxx'
+
+storage:
+  default: 'local'
+  disks:
+    local:
+      root_dir: './storage/app'
+      app_url: 'http://localhost:3600/storage'
