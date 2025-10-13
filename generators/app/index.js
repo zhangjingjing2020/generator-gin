@@ -26,36 +26,38 @@ export default class extends Generator {
     }
 
     writing() {
-        const targetDir = path.join(this.answers.outputPath, this.answers.projectName);
+        this.targetDir = path.join(this.answers.outputPath, this.answers.projectName);
 
         // 确保目录存在
-        fs.mkdirSync(targetDir, { recursive: true });
+        fs.mkdirSync(this.targetDir, { recursive: true });
 
         // 1渲染 go.mod.tpl → go.mod
         this.fs.copyTpl(
             this.templatePath('go.mod.tpl'),
-            path.join(targetDir, 'go.mod'),
+            path.join(this.targetDir, 'go.mod'),
             this.answers
         );
 
         // 2复制其他模板文件（**/* 匹配所有文件，包括隐藏文件）
         this.fs.copyTpl(
             this.templatePath('**/*'),
-            targetDir,
+            this.targetDir,
             this.answers, {}, { globOptions: { dot: true, ignore: ['go.mod.tpl'] } } // 支持 .gitignore 等隐藏文件
         );
 
-        // 3删除模板文件
-        const filesToDelete = ['go.mod.tpl'];
-        filesToDelete.forEach(file => {
-            const filePath = path.join(targetDir, file);
-            if (fs.existsSync(filePath)) {
-                fs.unlinkSync(filePath);
-            }
-        });
     }
 
     end() {
+        // 删除模板文件
+        const filesToDelete = ['go.mod.tpl'];
+        filesToDelete.forEach((file) => {
+            const filePath = path.join(this.targetDir, file);
+            if (fs.existsSync(filePath)) {
+                fs.unlinkSync(filePath);
+                this.log(`🗑️ 已删除模板文件: ${file}`);
+            }
+        });
+
         this.log(`✅ 项目 ${this.answers.projectName} 已生成到 ${this.answers.outputPath}`);
     }
 }
