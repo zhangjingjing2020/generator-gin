@@ -114,8 +114,10 @@ generator-gin 是简单的gin项目工程生成器，常用于Api项目开发
 ```
 
 ### 运行服务
+```shell
 go mod tidy
 go run main.go
+```
 
 * 配置文件在 etc/config.yaml
 
