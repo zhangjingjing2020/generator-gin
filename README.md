@@ -17,7 +17,7 @@ generator-gin 是简单的gin项目工程生成器，常用于Api项目开发
     yo gin
     
 生成的目录结构如下：
-
+```plaintext
 .
 ├── Dockerfile
 ├── app
@@ -111,6 +111,7 @@ generator-gin 是简单的gin项目工程生成器，常用于Api项目开发
     ├── md5.go
     ├── str.go
     └── validator.go
+```
 
 ### 运行服务
 go mod tidy
