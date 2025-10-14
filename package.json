@@ -1,17 +1,21 @@
 {
     "name": "generator-gin",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "A Yeoman generator for Gin-based Go projects",
+    "main": "generators/app/index.js",
+    "files": [
+        "generators"
+    ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "type": "module",
     "keywords": [
         "yeoman-generator",
-        "gin"
+        "gin",
+        "go"
     ],
-    "author": "",
+    "author": "chris",
     "license": "MIT",
     "dependencies": {
         "yeoman-generator": "^7.5.1"
