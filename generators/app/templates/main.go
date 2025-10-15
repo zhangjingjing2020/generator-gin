@@ -1,8 +1,8 @@
 package main
 
 import (
-	"sd-service/bootstrap"
-	"sd-service/global"
+	"<%= moduleName %>/bootstrap"
+	"<%= moduleName %>/global"
 )
 
 func main() {

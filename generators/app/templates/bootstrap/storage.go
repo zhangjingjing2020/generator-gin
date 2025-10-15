@@ -1,7 +1,7 @@
 package bootstrap
 
 import (
-	"sd-service/global"
+	"<%= moduleName %>/global"
 
 	"github.com/jassue/go-storage/local"
 )

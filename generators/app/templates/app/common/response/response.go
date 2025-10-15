@@ -3,7 +3,7 @@ package response
 import (
 	"net/http"
 	"os"
-	"sd-service/global"
+	"<%= moduleName %>/global"
 
 	"github.com/gin-gonic/gin"
 )

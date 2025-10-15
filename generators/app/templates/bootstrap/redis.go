@@ -2,7 +2,7 @@ package bootstrap
 
 import (
 	"context"
-	"sd-service/global"
+	"<%= moduleName %>/global"
 
 	"github.com/go-redis/redis/v8"
 	"go.uber.org/zap"

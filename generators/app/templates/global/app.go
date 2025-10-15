@@ -2,7 +2,7 @@ package global
 
 import (
 	"database/sql"
-	"sd-service/config"
+	"<%= moduleName %>/config"
 
 	"github.com/jassue/go-storage/storage"
 

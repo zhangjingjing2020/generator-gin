@@ -2,7 +2,7 @@ package global
 
 import (
 	"context"
-	"sd-service/utils"
+	"<%= moduleName %>/utils"
 	"time"
 
 	"github.com/go-redis/redis/v8"

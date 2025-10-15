@@ -1,6 +1,6 @@
 package types
 
-import "sd-service/app/models"
+import "<%= moduleName %>/app/models"
 
 type PlanSlice []models.OrderAutoDispatchPlan
 

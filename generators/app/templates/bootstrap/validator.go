@@ -2,7 +2,7 @@ package bootstrap
 
 import (
 	"reflect"
-	"sd-service/utils"
+	"<%= moduleName %>/utils"
 	"strings"
 
 	"github.com/gin-gonic/gin/binding"

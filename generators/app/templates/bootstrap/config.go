@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"fmt"
 	"os"
-	"sd-service/global"
+	"<%= moduleName %>/global"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
